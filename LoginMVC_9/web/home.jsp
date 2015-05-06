@@ -17,4 +17,4 @@
         <% String username = (String)session.getAttribute("username"); %>
         <h1>Hello <%= username %></h1>
     </body>
-</html>a
+</html>

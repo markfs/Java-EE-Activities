@@ -12,7 +12,6 @@
         <title>Profile</title>
     </head>
     <body>
-        <% String username = request.getParameter("username"); %>
-        <h1>Hello <%= username %></h1>
+        <h1>Hello <%= session.getAttribute("username") %></h1>
     </body>
 </html>
