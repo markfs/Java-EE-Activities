@@ -12,6 +12,8 @@ import java.sql.PreparedStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.http.HttpServlet;
 
 /**
@@ -48,6 +50,13 @@ public class UserDao extends HttpServlet{
             e.printStackTrace();
         }
         return result;
+    }
+    
+    public static List<UserBean> getAllUsers()
+    {
+        List<UserBean> users = new ArrayList();
+        
+        return users;
     }
     
     /*public static void main(String[] args)
